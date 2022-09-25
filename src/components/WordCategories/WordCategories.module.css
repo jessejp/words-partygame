@@ -1,0 +1,20 @@
+
+.wordpacks {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .wordpacksCard {
+    background: rgb(185, 185, 185);
+  }
+  
+  .wordpacksCardColor {
+    background: rgb(175, 62, 62);
+    width: 8em;
+    height: 2em;
+  }
+  .wordpacksCardName {
+    padding: 0.4em;
+    text-align: center;
+  }
+  

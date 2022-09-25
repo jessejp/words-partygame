@@ -1,0 +1,62 @@
+.grid {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+/* Suggestion Block */
+.suggestionGrid {
+  grid-template: repeat(2, minmax(auto, 7em)) / repeat(3, minmax(auto, 7em));
+  gap: 1em max(1vw);
+  margin: 1em 0 1em 0;
+  height: 30vh;
+}
+
+.suggestionBlock {
+  background-color: #8cd1a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.15em;
+}
+
+.suggestionPlayersGrid {
+  display: grid;
+  grid-template: 2fr 2fr / 2fr 2fr;
+  gap: 0.15em;
+}
+
+.suggestionPlayerName {
+  background-color: rgb(87, 87, 192);
+}
+
+/*Words card*/
+.wordGrid {
+  grid-template: repeat(6, auto) / repeat(4, auto);
+  gap: max(1vh) max(1vw);
+  height: 39vh;
+}
+
+@media (max-width: 360px) {
+  .wordGrid {
+    grid-template: repeat(8, auto) / repeat(3, 3fr);
+    width: 95vw;
+    
+  }
+}
+
+.wordGridCard {
+  min-width: 6.5em;
+  padding: 0.4em 0;
+  text-align: center;
+  background: #d4bde8;
+  overflow: hidden;
+}
+
+.inactive {
+  background: #d4bde8;
+}
+
+.active {
+  background: #8cd1a6;
+}
